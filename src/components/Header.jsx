@@ -12,12 +12,12 @@ export default function Header() {
           <Image src={Logo} alt="Petra One" />
         </div>
         <nav className="nav">
-          <Link href="#Description">OPIS</Link>
-          <Link href="#Attractions">ATRAKCJE</Link>
-          <Link href="#Contact">KONTAKT</Link>
-          <Link href="#Advices">PORADY EKSPERTA</Link>
-          <Link href="#Gallery">GALERIA</Link>
-          <Link href="#Links">PRZYDATNE LINKI</Link>
+          <a href="#Description">OPIS</a>
+          <a href="#Attractions">ATRAKCJE</a>
+          <a href="#Contact">KONTAKT</a>
+          <a href="#Advices">PORADY EKSPERTA</a>
+          <a href="#Gallery">GALERIA</a>
+          <a href="#Links">PRZYDATNE LINKI</a>
         </nav>
         <div className="cta">
           <Image src={LightPhone} alt="Telefon" />

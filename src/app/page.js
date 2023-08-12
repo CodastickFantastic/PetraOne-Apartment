@@ -42,6 +42,7 @@ import CatHouse from "@/img/photos/catHouse.jpg";
 import Damlatas from "@/img/photos/damlatas.jpg";
 
 import Link from "next/link";
+import Form from "@/components/Form";
 
 export default function Home() {
   return (
@@ -75,11 +76,11 @@ export default function Home() {
         </div>
         <div className="right">
           <div className="row">
-            <Image src={Photo1} alt="Apartament Wewntrz" className="photo photo1" />
+            <Image src={Photo1} alt="Apartament Wewntrz" className="photo photo1" priority />
           </div>
           <div className="row">
-            <Image src={Photo2} className="photo photo2" alt="Apartament Wewntrz" />
-            <Image src={Photo3} className="photo photo3" alt="Apartament Wewntrz" />
+            <Image src={Photo2} className="photo photo2" alt="Apartament Wewntrz" priority />
+            <Image src={Photo3} className="photo photo3" alt="Apartament Wewntrz" priority />
           </div>
         </div>
       </section>
@@ -148,7 +149,7 @@ export default function Home() {
         <div className="tiles">
           <div className="tile">
             <div className="image">
-              <Image src={Bazaar} alt="Ikona lokalizacji" />
+              <Image src={Bazaar} alt="Turecki Bazar" />
               <Link href="https://www.pexels.com/pl-pl/zdjecie/swiatla-lampy-wystawa-zakupy-7314474/" target="_blank">
                 Photo by: Meruyert Gonullu{" "}
               </Link>
@@ -181,9 +182,9 @@ export default function Home() {
           </div>
           <div className="tile">
             <div className="image">
-              <Image src={DimCave} alt="Alanya nocą" />
-              <Link href="/" target="_blank">
-                Photo by: ?
+              <Image src={DimCave} alt="Jaskinia" />
+              <Link href="https://www.pexels.com/pl-pl/zdjecie/ludzie-podroz-jaskinia-podziemny-17126254/" target="_blank">
+                Photo by: Hong Son
               </Link>
             </div>
             <h3 className="title">Jaskinia Dim</h3>
@@ -197,31 +198,32 @@ export default function Home() {
           </div>
           <div className="tile">
             <div className="image">
-              <Image src={Dim} alt="Dim Cay" />
-              <Link href="/" target="_blank">
-                Photo by: ?
+              <Image src={CatHouse} alt="Park miejski i dom kotów" />
+              <Link
+                href="https://www.freepik.com/free-photo/cat-is-basking-nets-marina-fishing-pier-selective-focus-concept-background-screensaver-about-life-street-animals-city-ecosystems_34949649.htm#query=cat%20alanya&position=2&from_view=search&track=ais"
+                target="_blank"
+              >
+                Photo by: ededchechine on Freepik
               </Link>
             </div>
-            <h3 className="title">Dim Cay</h3>
+            <h3 className="title">Park oraz Dom Kotów</h3>
             <p className="description">
-              To najbardziej ulubione miejsce szczególnie w szczycie sezonu gdy żar leje się z nieba. Dim Cay to nazwa rzeki która leży
-              nieopodal Alanyi w górach Taurus. Znajduje się tam kilkadziesiąt restauracji wodnych które szczególnie w weekend cieszą się
-              dużą popularnością wśród tubylców. <br />
+              Znajduje się w samym centrum miasta. Idąc do portu od pomnika Ataturka na pewno na niego natraficie. <br />
+              <br /> Można tu przysiąść na licznych ławeczkach i spoglądać na sporą fontannę . Idąc w stronę portu na pewno też natraficie
+              na wylegujące się w trawie koty. <br />
               <br />
-              Wśród szumu rzeki i pięknym krajobrazie siedzi się nad poziomem rzeki na dryfujących platformach. W praktycznie każdej
-              restauracji jest basen ze zjeżdżalniami lub można się wykapać w zimnej górskiej rzece.
-              <br />
-              <br />
-              Restauracje oferują swoim gościom bogate menu. Można tu zjeść przez siebie złowionego pstrąga lub mięso z grilla.
-              <br />
-              <br /> Dojechać tu można autobusem numer 10 do Dim Cay
+              Urząd miasta zbudował tu dla nich domy, dokarmia je i dba o nie. Jeśli jesteś miłośnikiem tych zwierząt na pewno powinieneś
+              odwiedzić to miejsce.
             </p>
           </div>
           <div className="tile">
             <div className="image">
               <Image src={RedTower} alt="Czewona Wieża" />
-              <Link href="/" target="_blank">
-                Photo by: ?
+              <Link
+                href="https://pixabay.com/pl/users/pixamin_com-5230952/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=2328598"
+                target="_blank"
+              >
+                Photo by: Pixamin
               </Link>
             </div>
             <h3 className="title">Czerwona Wieża</h3>
@@ -239,9 +241,32 @@ export default function Home() {
           </div>
           <div className="tile">
             <div className="image">
+              <Image src={Damlatas} alt="Jaskinia" />
+              <Link
+                href="https://pixabay.com/pl/users/skitterphoto-324082/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=498511"
+                target="_blank"
+              >
+                Photo by: Rudy and Peter Skitterians
+              </Link>
+            </div>
+            <h3 className="title">Jaskinia Damlatas</h3>
+            <p className="description">
+              Została odkryta 1948 roku przez przypadek i do dziś jest jedną z najpopularniejszych atrakcji w Alanyi. Znajduje się po
+              zachodniej stronie półwyspu tuż przy plaży Kleopatry. <br />
+              <br /> Jej nazwa oznacza Kapiący Kamień co nawiązuje do jej charakteru. Nie jest to duża jaskinia ale posiada właściwości
+              sprzyjające astmatykom. <br />
+              <br /> We wnętrzu znajduję się stalaktyty, z których kapie woda, najlepiej można to zaobserwować zimą. <br />
+              <br /> Wstęp do jaskini jest płatny 6 TL za os (2020)
+            </p>
+          </div>
+          <div className="tile">
+            <div className="image">
               <Image src={Spadere} alt="Wąwóz Spadere" />
-              <Link href="/" target="_blank">
-                Photo by: ?
+              <Link
+                href="https://www.freepik.com/free-photo/aerial-scenery-view-waterfall_13447726.htm#query=sapadere%20canyon&position=1&from_view=keyword&track=ais"
+                target="_blank"
+              >
+                Photo by: Freepik
               </Link>
             </div>
             <h3 className="title">Kanion Spadere</h3>
@@ -256,13 +281,13 @@ export default function Home() {
             </p>
           </div>
           <div className="tile">
-            <div className="image">
+            {/* <div className="image">
               <Image src={AlanyaLove} alt="Alanya Love" />
               <Link href="/" target="_blank">
                 Photo by: ?
               </Link>
-            </div>
-            <h3 className="title">Kanion Spadere</h3>
+            </div> */}
+            <h3 className="title">I Love Alanya (Hollywood Sign)</h3>
             <p className="description">
               To właśnie tu z znajduje się napis niczym z Hollywood. <br />
               <br />Z tarasów widokowych rozciąga się niesamowity panoramiczny widok na całe miasto i wzgórze Kale. Znajdują się tu miejsca
@@ -272,38 +297,30 @@ export default function Home() {
               Można tu dotrzeć autobusem nr 8.
             </p>
           </div>
+
           <div className="tile">
             <div className="image">
-              <Image src={CatHouse} alt="Park miejski i dom kotów" />
-              <Link href="/" target="_blank">
-                Photo by: ?
+              <Image src={Dim} alt="Dim Cay" />
+              <Link
+                href="https://www.freepik.com/free-photo/beautiful-park-view_1278517.htm#page=2&query=dimcay%20river&position=3&from_view=search&track=ais"
+                target="_blank"
+              >
+                Photo by: Image by 4045 on Freepik
               </Link>
             </div>
-            <h3 className="title">Park oraz Dom Kotów</h3>
+            <h3 className="title">Dim Cay</h3>
             <p className="description">
-              Znajduje się w samym centrum miasta. Idąc do portu od pomnika Ataturka na pewno na niego natraficie. <br />
-              <br /> Można tu przysiąść na licznych ławeczkach i spoglądać na sporą fontannę . Idąc w stronę portu na pewno też natraficie
-              na wylegujące się w trawie koty. <br />
+              To najbardziej ulubione miejsce szczególnie w szczycie sezonu gdy żar leje się z nieba. Dim Cay to nazwa rzeki która leży
+              nieopodal Alanyi w górach Taurus. Znajduje się tam kilkadziesiąt restauracji wodnych które szczególnie w weekend cieszą się
+              dużą popularnością wśród tubylców. <br />
               <br />
-              Urząd miasta zbudował tu dla nich domy, dokarmia je i dba o nie. Jeśli jesteś miłośnikiem tych zwierząt na pewno powinieneś
-              odwiedzić to miejsce.
-            </p>
-          </div>
-          <div className="tile">
-            <div className="image">
-              <Image src={Damlatas} alt="Jaskinia Damlatas" />
-              <Link href="/" target="_blank">
-                Photo by: ?
-              </Link>
-            </div>
-            <h3 className="title">Jaskinia Damlatas</h3>
-            <p className="description">
-              Została odkryta 1948 roku przez przypadek i do dziś jest jedną z najpopularniejszych atrakcji w Alanyi. Znajduje się po
-              zachodniej stronie półwyspu tuż przy plaży Kleopatry. <br />
-              <br /> Jej nazwa oznacza Kapiący Kamień co nawiązuje do jej charakteru. Nie jest to duża jaskinia ale posiada właściwości
-              sprzyjające astmatykom. <br />
-              <br /> We wnętrzu znajduję się stalaktyty, z których kapie woda, najlepiej można to zaobserwować zimą. <br />
-              <br /> Wstęp do jaskini jest płatny 6 TL za os (2020)
+              Wśród szumu rzeki i pięknym krajobrazie siedzi się nad poziomem rzeki na dryfujących platformach. W praktycznie każdej
+              restauracji jest basen ze zjeżdżalniami lub można się wykapać w zimnej górskiej rzece.
+              <br />
+              <br />
+              Restauracje oferują swoim gościom bogate menu. Można tu zjeść przez siebie złowionego pstrąga lub mięso z grilla.
+              <br />
+              <br /> Dojechać tu można autobusem numer 10 do Dim Cay
             </p>
           </div>
         </div>
@@ -313,37 +330,7 @@ export default function Home() {
         <h2>Zarezerwuj swój pobyt w PetraOne Apartment</h2>
         <div className="info">
           <div className="col">
-            <form>
-              <label htmlFor="name">
-                Imię i Nazwisko
-                <input type="text" name="name" id="name" />
-              </label>
-              <label htmlFor="email">
-                Adres Email
-                <input type="email" name="email" id="email" />
-              </label>
-              <label htmlFor="phone">
-                Numer Telefonu
-                <input type="tel" name="phone" id="phone" />
-              </label>
-              <label htmlFor="person">
-                Ilość Osób
-                <input type="number" name="person" id="person" />
-              </label>
-              <label htmlFor="dateFrom">
-                Data Przyjazdu
-                <input type="date" name="dateFrom" id="dateFrom" />
-              </label>
-              <label htmlFor="dateTo">
-                Data Wyjazdu
-                <input type="date" name="dateTo" id="dateTo" />
-              </label>
-              <label htmlFor="message">
-                Wiadomość
-                <textarea name="message" id="message" cols="30" rows="10"></textarea>
-              </label>
-              <button type="submit">Wyślij Wiadomość</button>
-            </form>
+            <Form />
           </div>
           <div className="col">
             <div className="tiles">
@@ -426,25 +413,25 @@ export default function Home() {
         <h2>Galeria</h2>
         <p>Poświęć chwilę i poznaj apartament w któym spędzisz cudowne chwile w najbliższe wakacje.</p>
         <div className="row">
-          <Image src={Photo6} className="photo gal1" />
-          <Image src={Photo7} className="photo gal2" />
+          <Image src={Photo6} className="photo gal1" alt="galeria zdjęć" />
+          <Image src={Photo7} className="photo gal2" alt="galeria zdjęć" />
         </div>
         <div className="row">
-          <Image src={Photo8} className="photo gal3" />
-          <Image src={Photo9} className="photo gal4" />
-          <Image src={Photo10} className="photo gal5" />
+          <Image src={Photo8} className="photo gal3" alt="galeria zdjęć" />
+          <Image src={Photo9} className="photo gal4" alt="galeria zdjęć" />
+          <Image src={Photo10} className="photo gal5" alt="galeria zdjęć" />
         </div>
         <div className="row">
-          <Image src={Photo11} className="photo gal6" />
-          <Image src={Photo3} className="photo gal7" />
+          <Image src={Photo11} className="photo gal6" alt="galeria zdjęć" />
+          <Image src={Photo3} className="photo gal7" alt="galeria zdjęć" />
         </div>
         <div className="row">
-          <Image src={Photo12} className="photo gal8" />
-          <Image src={Photo13} className="photo gal9" />
+          <Image src={Photo12} className="photo gal8" alt="galeria zdjęć" />
+          <Image src={Photo13} className="photo gal9" alt="galeria zdjęć" />
         </div>
         <div className="row">
-          <Image src={Photo1} className="photo gal10" />
-          <Image src={Photo2} className="photo gal11" />
+          <Image src={Photo1} className="photo gal10" alt="galeria zdjęć" />
+          <Image src={Photo2} className="photo gal11" alt="galeria zdjęć" />
         </div>
       </section>
 

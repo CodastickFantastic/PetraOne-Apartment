@@ -281,24 +281,6 @@ export default function Home() {
             </p>
           </div>
           <div className="tile">
-            {/* <div className="image">
-              <Image src={AlanyaLove} alt="Alanya Love" />
-              <Link href="/" target="_blank">
-                Photo by: ?
-              </Link>
-            </div> */}
-            <h3 className="title">I Love Alanya (Hollywood Sign)</h3>
-            <p className="description">
-              To właśnie tu z znajduje się napis niczym z Hollywood. <br />
-              <br />Z tarasów widokowych rozciąga się niesamowity panoramiczny widok na całe miasto i wzgórze Kale. Znajdują się tu miejsca
-              piknikowe, restauracje i kawiarnie i place zbaw dla dzieci. <br />
-              <br />W amfiteatrze odbywają się liczne występy i pokazy. <br />
-              <br />
-              Można tu dotrzeć autobusem nr 8.
-            </p>
-          </div>
-
-          <div className="tile">
             <div className="image">
               <Image src={Dim} alt="Dim Cay" />
               <Link

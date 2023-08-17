@@ -9,16 +9,14 @@ export default function Form() {
     setMessage(false);
 
     let formData = new FormData(event.target);
-    formData.append("service_id", "service_ytydzne");
-    formData.append("template_id", "template_5sypc94");
-    formData.append("user_id", "hd5Oe6xp75cqTFQDF");
+    formData.append("service_id", process.env.NEXT_PUBLIC_EMAIL_JS_SERVICE_ID);
+    formData.append("template_id", process.env.NEXT_PUBLIC_EMAIL_JS_TEMPLATE_ID);
+    formData.append("user_id", process.env.NEXT_PUBLIC_EMAIL_JS_USER_ID);
 
     let request = await fetch("https://api.emailjs.com/api/v1.0/email/send-form", {
       method: "POST",
       body: formData,
     });
-
-    console.log(request);
 
     if (request.status === 200) {
       setMessage("Wiadomość została wysłana. Dziękujemy!");
